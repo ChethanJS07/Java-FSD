@@ -1,0 +1,35 @@
+html
+{
+  background-color: lightblue;
+  font-size: 20px;
+}
+h4
+{
+  color : red;
+  background-color: black ;
+}
+.second
+{
+  background-color: greenyellow;
+  color: blueviolet;
+  /* px, vw, ch, %, rm, fit-content*/
+  width: fit-content;
+  /* px, vh, ch, %, rm, fit-content */
+  height: fit-content;
+  /* solid, dashed, dotted */
+  border: 4px white dotted;
+  /* */
+  border-radius: 14px;
+  /* padding - top,right,bottom,left*/
+  /* two values - top-bottom, left-right*/
+  /* three values - top, left-right, bottom*/
+  /* four values - top,right,bottom,left */
+  padding: 4px 8px 16px;
+  /* large, larger, small, smaller*/
+  font-size: 40px;
+  /* bold, italic*/
+  font-weight: smaller;
+  /* pointer, progress*/
+  cursor: pointer;
+  box-shadow: 2px 2px 4px black;
+}
