@@ -5,6 +5,52 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
   <title>My First HTML Page</title>
+  <style>
+    button
+    {
+      background-color: blue;
+      color: white;
+      width: fit-content;
+      padding: 12px;
+      margin: 8px;
+      border-radius: 34px;
+      border: 2px white solid;
+      font-size: larger;
+      font-weight: 700;
+      cursor: pointer;
+      box-shadow: 2px 2px 4px rgb(0,0,0,0.2);
+      transition: background-color 0.5s linear;
+    }
+    .btn:hover
+    {
+      background-color: rgb(123, 123, 148);
+      box-shadow: 2px 2px 4px rgb(0,0,0,0.5);
+    }
+    .btn:active
+    {
+      background-color: black;
+    }
+    .btn:focus
+    {
+      background-color: yellow;
+    }
+    .btn:disabled
+    {
+      background-color: grey;
+      box-shadow: none;
+      cursor: not-allowed;
+      pointer-events: none;
+    }
+    input
+    {
+      width: 300px;
+      &:focus
+      {
+        background-color: black;
+        color: whitesmoke;
+      }
+    }
+  </style>
 </head>
 <body style="background-color: antiquewhite; color: brown">
   Hello World
@@ -39,6 +85,74 @@
   <del>Deleted Text</del><br>
   <small>Small</small><br>
   <mark>Mark</mark><br><hr>
-  <button >Button</button>
+  <button >Button</button><br><hr>
+
+
+  <button class="btn" disabled>
+    Sample Button
+  </button>
+  <!-- div acts as a break in the page for layout-->
+  <div class = "divOne">
+    <button>
+      Button1
+    </button>
+    <!-- span is inline, for styles and inline layout changes-->
+    <button>
+      Button2
+    </button>
+    <button>
+      Button3
+    </button>
+    <button>
+      Button4
+    </button>
+    <button>
+      Button5
+    </button>
+    <button>
+      Button6
+    </button>
+    <button>
+      Button7
+    </button>
+  </div>
+  <div class="divTwo">
+    <button>
+      Button A
+    </button>
+    <button>
+      Button B
+    </button>
+    <button>
+      Button C
+    </button>
+    <button>
+      Button D
+    </button>
+    <button>
+      Button E
+    </button>
+    <button>
+      Button F
+    </button>
+    <button>
+      Button G
+    </button>
+    <button>
+      Button H
+    </button>
+  </div>
+
+  <input type="text">
+
+  <div class="textContainer">
+    <p class="paragraph">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit.<br>
+      Harum minima quis voluptatem commodi accusantium neque quia <br>
+      ipsum quidem impedit eligendi quod nostrum dolore <br>
+      doloribus, modi, quasi, sed distinctio alias facere.<br>
+    </p>
+  </div>
+  
 </body>
-</html>
+</html> 

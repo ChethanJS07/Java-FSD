@@ -33,3 +33,73 @@ h4
   cursor: pointer;
   box-shadow: 2px 2px 4px black;
 }
+
+.divOne
+{
+  /* margin top,bottom,left,rigt*/
+  margin: 8px;
+  /* default : block; flex*/
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 30vh;
+  /* space-between, space-evenly, space-around, center */
+  /*justify-content: center;*/
+  /* default: nowrap; */
+  flex-wrap: wrap;
+  justify-content: space-around;
+  /*center, flex-start,flex-end*/
+  align-content: center;
+  gap: 25px;
+  /* min-height: 500px; max-height: 500px*/
+  /* min-width: device whose width is greater than given - mobile first */
+  @media screen and (min-width: 700px) 
+  {
+    flex-direction: column;
+  }
+  /* max-width: devices whose max width is less than given pixesl - desktops first*/
+  @media screen and (max-width: 700px) 
+  {
+    button
+    {
+      background-color: yellow;
+      color: black;
+    }
+    flex-direction: row;
+  }
+  button
+  {
+    background-color: green;
+  }
+}
+
+.divTwo
+{
+  margin: 8px;
+  display: grid;
+  /*grid-template-columns: 1fr 2fr;*/
+  grid-template-columns: 150px 150px 150px 150px;
+  height: 50vh;
+  /*align-content: center;*/
+  /*  center,start,end */
+  align-items: center;
+  justify-items: center;
+  button
+  {
+    background-color: red;
+    height: fit-content;
+  }
+} 
+
+.paragraph
+{
+  text-decoration: underline;
+}
+
+.textContainer
+{
+  max-width: 30vw;
+  height: 50px;
+  overflow: scroll;
+  overflow-x: hidden;
+}
