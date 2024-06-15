@@ -1,7 +1,7 @@
 console.log("Hello world");
-//Single line comment
-/* Multi line 
-comment */
+// //Single line comment
+// /* Multi line 
+// comment */
 console.log("Comments are not executed");
 
 //Variable can be defined in 3 ways : let, const, *var(old way of declaring);
@@ -16,3 +16,11 @@ myObj = {'key1':1,'key2':2,'key3':3};
 console.log(q,p);
 console.log(4-'3');
 console.log(Boolean({}));
+
+// Logical Operators
+//AND - &&, OR - ||, NOT - !
+const boolVal = []&&"hello"&&{}; // Returns the first false value, else it returns the last value;
+console.log(boolVal); 
+const boolVal2 = undefined || 1 || null;
+console.log(boolVal2);
+console.log(typeof (3*'3'));
