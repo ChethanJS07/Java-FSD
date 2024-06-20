@@ -1,25 +1,23 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
+import App from './App';
+import {Demo} from './Demo';
 import reportWebVitals from './reportWebVitals';
-import { MyRoutes } from './Layout';
-// import Condition from './Condition'
-// import { App } from './App'
-// import { MyForm } from './MyForm'
 
-const root = ReactDOM.createRoot(document.getElementById('newRoot'));
+const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <MyRoutes />
+  <React.StrictMode>
+    <Demo />
+  </React.StrictMode>
 );
+// for jsx
+// const myElement = (<p>This is JSX</p>);
+
 // root.render(
-//   <Condition />
-// );
-// root.render(
-//   <App />
-// );
-// root.render(
-//   <MyForm />
-// );
+//   //<h1>Hello World</h1>
+//   myElement
+// )
 
 
 // If you want to start measuring performance in your app, pass a function
