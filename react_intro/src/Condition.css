@@ -1,0 +1,14 @@
+.myButton{
+    padding: 4px 8px;
+    background-color: lightblue;
+    border-radius: 8px;
+    font-size: large;
+    border: none;
+    transition: all 0.3s linear;
+    cursor: pointer;
+
+    &:hover {
+        background-color: cyan;
+        box-shadow: 2px 2px 2px 2px rgb(0,0,0,0.5)
+    }
+}
