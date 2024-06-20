@@ -1,11 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
 
-function App() {
+function App(props) {
 
-  const firstNumber = 45;
-  const secondNumber = 87;
-  
+  const firstNumber = props.numberData.firstNumber;
+  const secondNumber = props.numberData.secondNumber;
+
   return (
     <div className="App">
       {/* <header className="App-header">
@@ -22,9 +22,10 @@ function App() {
           Learn React
         </a>
       </header> */}
-      <h1>
+      {secondNumber &&
+        <h1>
         Hello World {firstNumber+secondNumber}
-      </h1>
+      </h1>}
     </div>
   );
 }
