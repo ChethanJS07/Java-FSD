@@ -1,10 +1,12 @@
 const express = require('express');
+require('dotenv').config();
 const connectMongoDB = require('./config/db');
 const cors = require('cors');
 const todoRoutes = require('./routes/todo');
+const authRoutes = require('./routes/auth');
 const todo = require('./models/todo');
 const { connect } = require('mongoose');
-require('dotenv').config();
+
 
 
 const app = express();
@@ -22,7 +24,8 @@ app.use(cors({
   credentials: true
 }));
 //Routes (end points)
-app.use('/api/todo',todoRoutes)
+app.use('/api/todo',todoRoutes);
+app.use('/api',authRoutes);
 
 app.listen(PORT,()=>{
   console.log(`Todo app server is listening on Port ${PORT}`);
